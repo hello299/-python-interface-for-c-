@@ -1,0 +1,6 @@
+#ifndef AUTOMOBILE_LIBRARY_H
+#define AUTOMOBILE_LIBRARY_H
+
+#include "octree_change_detection.h"
+
+#endif

@@ -1,0 +1,4 @@
+/usr/local/lib/liboctree.so
+/usr/local/include/octree_change_detection
+/usr/local/include/include/octree_change_detection.h
+/usr/local/include/include/octree_change_detection
