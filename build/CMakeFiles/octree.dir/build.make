@@ -18,9 +18,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -46,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhaobojun/change_detection_ws/src
+CMAKE_SOURCE_DIR = /home/zhaobojun/change_detection_ws/src/change_detection
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhaobojun/change_detection_ws/src/build
+CMAKE_BINARY_DIR = /home/zhaobojun/change_detection_ws/src/change_detection/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/octree.dir/depend.make
@@ -60,176 +57,34 @@ include CMakeFiles/octree.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/octree.dir/flags.make
 
-CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.o: CMakeFiles/octree.dir/flags.make
-CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.o: ../change_detection/src/octree_change_detection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhaobojun/change_detection_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.o -c /home/zhaobojun/change_detection_ws/src/change_detection/src/octree_change_detection.cpp
+CMakeFiles/octree.dir/src/octree_change_detection.cpp.o: CMakeFiles/octree.dir/flags.make
+CMakeFiles/octree.dir/src/octree_change_detection.cpp.o: ../src/octree_change_detection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhaobojun/change_detection_ws/src/change_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/octree.dir/src/octree_change_detection.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/octree.dir/src/octree_change_detection.cpp.o -c /home/zhaobojun/change_detection_ws/src/change_detection/src/octree_change_detection.cpp
 
-CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhaobojun/change_detection_ws/src/change_detection/src/octree_change_detection.cpp > CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.i
+CMakeFiles/octree.dir/src/octree_change_detection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/octree.dir/src/octree_change_detection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhaobojun/change_detection_ws/src/change_detection/src/octree_change_detection.cpp > CMakeFiles/octree.dir/src/octree_change_detection.cpp.i
 
-CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhaobojun/change_detection_ws/src/change_detection/src/octree_change_detection.cpp -o CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.s
-
-CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.o: CMakeFiles/octree.dir/flags.make
-CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.o: ../python_change_Detection/OctreeChangeDetection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhaobojun/change_detection_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.o -c /home/zhaobojun/change_detection_ws/src/python_change_Detection/OctreeChangeDetection.cpp
-
-CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhaobojun/change_detection_ws/src/python_change_Detection/OctreeChangeDetection.cpp > CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.i
-
-CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhaobojun/change_detection_ws/src/python_change_Detection/OctreeChangeDetection.cpp -o CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.s
-
-CMakeFiles/octree.dir/python_change_Detection/octree.cpp.o: CMakeFiles/octree.dir/flags.make
-CMakeFiles/octree.dir/python_change_Detection/octree.cpp.o: ../python_change_Detection/octree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhaobojun/change_detection_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/octree.dir/python_change_Detection/octree.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/octree.dir/python_change_Detection/octree.cpp.o -c /home/zhaobojun/change_detection_ws/src/python_change_Detection/octree.cpp
-
-CMakeFiles/octree.dir/python_change_Detection/octree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/octree.dir/python_change_Detection/octree.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhaobojun/change_detection_ws/src/python_change_Detection/octree.cpp > CMakeFiles/octree.dir/python_change_Detection/octree.cpp.i
-
-CMakeFiles/octree.dir/python_change_Detection/octree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/octree.dir/python_change_Detection/octree.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhaobojun/change_detection_ws/src/python_change_Detection/octree.cpp -o CMakeFiles/octree.dir/python_change_Detection/octree.cpp.s
+CMakeFiles/octree.dir/src/octree_change_detection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/octree.dir/src/octree_change_detection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhaobojun/change_detection_ws/src/change_detection/src/octree_change_detection.cpp -o CMakeFiles/octree.dir/src/octree_change_detection.cpp.s
 
 # Object files for target octree
 octree_OBJECTS = \
-"CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.o" \
-"CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.o" \
-"CMakeFiles/octree.dir/python_change_Detection/octree.cpp.o"
+"CMakeFiles/octree.dir/src/octree_change_detection.cpp.o"
 
 # External object files for target octree
 octree_EXTERNAL_OBJECTS =
 
-octree.cpython-38-x86_64-linux-gnu.so: CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.o
-octree.cpython-38-x86_64-linux-gnu.so: CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.o
-octree.cpython-38-x86_64-linux-gnu.so: CMakeFiles/octree.dir/python_change_Detection/octree.cpp.o
-octree.cpython-38-x86_64-linux-gnu.so: CMakeFiles/octree.dir/build.make
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_people.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libqhull.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/libOpenNI.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/libOpenNI2.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libfreetype.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libz.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libjpeg.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpng.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libtiff.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libexpat.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_registration.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_features.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_search.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_io.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpcl_common.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libqhull.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/libOpenNI.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/libOpenNI2.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libjpeg.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libpng.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libtiff.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libexpat.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkImagingColor-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libfreetype.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersSources-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersCore-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkCommonMisc-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkCommonMath-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtksys-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libz.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libGLEW.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libSM.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libICE.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libX11.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libXext.so
-octree.cpython-38-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libXt.so
-octree.cpython-38-x86_64-linux-gnu.so: CMakeFiles/octree.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhaobojun/change_detection_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared module octree.cpython-38-x86_64-linux-gnu.so"
+liboctree.so: CMakeFiles/octree.dir/src/octree_change_detection.cpp.o
+liboctree.so: CMakeFiles/octree.dir/build.make
+liboctree.so: CMakeFiles/octree.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhaobojun/change_detection_ws/src/change_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library liboctree.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/octree.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/strip /home/zhaobojun/change_detection_ws/src/build/octree.cpython-38-x86_64-linux-gnu.so
 
 # Rule to build all files generated by this target.
-CMakeFiles/octree.dir/build: octree.cpython-38-x86_64-linux-gnu.so
+CMakeFiles/octree.dir/build: liboctree.so
 
 .PHONY : CMakeFiles/octree.dir/build
 
@@ -238,6 +93,6 @@ CMakeFiles/octree.dir/clean:
 .PHONY : CMakeFiles/octree.dir/clean
 
 CMakeFiles/octree.dir/depend:
-	cd /home/zhaobojun/change_detection_ws/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhaobojun/change_detection_ws/src /home/zhaobojun/change_detection_ws/src /home/zhaobojun/change_detection_ws/src/build /home/zhaobojun/change_detection_ws/src/build /home/zhaobojun/change_detection_ws/src/build/CMakeFiles/octree.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zhaobojun/change_detection_ws/src/change_detection/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhaobojun/change_detection_ws/src/change_detection /home/zhaobojun/change_detection_ws/src/change_detection /home/zhaobojun/change_detection_ws/src/change_detection/build /home/zhaobojun/change_detection_ws/src/change_detection/build /home/zhaobojun/change_detection_ws/src/change_detection/build/CMakeFiles/octree.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/octree.dir/depend
 

@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -51,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhaobojun/change_detection_ws/src
+CMAKE_SOURCE_DIR = /home/zhaobojun/change_detection_ws/src/change_detection
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhaobojun/change_detection_ws/src/build
+CMAKE_BINARY_DIR = /home/zhaobojun/change_detection_ws/src/change_detection/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,7 +94,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"python\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -129,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhaobojun/change_detection_ws/src/build/CMakeFiles /home/zhaobojun/change_detection_ws/src/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhaobojun/change_detection_ws/src/change_detection/build/CMakeFiles /home/zhaobojun/change_detection_ws/src/change_detection/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhaobojun/change_detection_ws/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhaobojun/change_detection_ws/src/change_detection/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -172,86 +169,32 @@ octree/fast:
 	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/build
 .PHONY : octree/fast
 
-change_detection/src/octree_change_detection.o: change_detection/src/octree_change_detection.cpp.o
+src/octree_change_detection.o: src/octree_change_detection.cpp.o
 
-.PHONY : change_detection/src/octree_change_detection.o
-
-# target to build an object file
-change_detection/src/octree_change_detection.cpp.o:
-	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.o
-.PHONY : change_detection/src/octree_change_detection.cpp.o
-
-change_detection/src/octree_change_detection.i: change_detection/src/octree_change_detection.cpp.i
-
-.PHONY : change_detection/src/octree_change_detection.i
-
-# target to preprocess a source file
-change_detection/src/octree_change_detection.cpp.i:
-	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.i
-.PHONY : change_detection/src/octree_change_detection.cpp.i
-
-change_detection/src/octree_change_detection.s: change_detection/src/octree_change_detection.cpp.s
-
-.PHONY : change_detection/src/octree_change_detection.s
-
-# target to generate assembly for a file
-change_detection/src/octree_change_detection.cpp.s:
-	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/change_detection/src/octree_change_detection.cpp.s
-.PHONY : change_detection/src/octree_change_detection.cpp.s
-
-python_change_Detection/OctreeChangeDetection.o: python_change_Detection/OctreeChangeDetection.cpp.o
-
-.PHONY : python_change_Detection/OctreeChangeDetection.o
+.PHONY : src/octree_change_detection.o
 
 # target to build an object file
-python_change_Detection/OctreeChangeDetection.cpp.o:
-	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.o
-.PHONY : python_change_Detection/OctreeChangeDetection.cpp.o
+src/octree_change_detection.cpp.o:
+	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/src/octree_change_detection.cpp.o
+.PHONY : src/octree_change_detection.cpp.o
 
-python_change_Detection/OctreeChangeDetection.i: python_change_Detection/OctreeChangeDetection.cpp.i
+src/octree_change_detection.i: src/octree_change_detection.cpp.i
 
-.PHONY : python_change_Detection/OctreeChangeDetection.i
-
-# target to preprocess a source file
-python_change_Detection/OctreeChangeDetection.cpp.i:
-	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.i
-.PHONY : python_change_Detection/OctreeChangeDetection.cpp.i
-
-python_change_Detection/OctreeChangeDetection.s: python_change_Detection/OctreeChangeDetection.cpp.s
-
-.PHONY : python_change_Detection/OctreeChangeDetection.s
-
-# target to generate assembly for a file
-python_change_Detection/OctreeChangeDetection.cpp.s:
-	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/python_change_Detection/OctreeChangeDetection.cpp.s
-.PHONY : python_change_Detection/OctreeChangeDetection.cpp.s
-
-python_change_Detection/octree.o: python_change_Detection/octree.cpp.o
-
-.PHONY : python_change_Detection/octree.o
-
-# target to build an object file
-python_change_Detection/octree.cpp.o:
-	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/python_change_Detection/octree.cpp.o
-.PHONY : python_change_Detection/octree.cpp.o
-
-python_change_Detection/octree.i: python_change_Detection/octree.cpp.i
-
-.PHONY : python_change_Detection/octree.i
+.PHONY : src/octree_change_detection.i
 
 # target to preprocess a source file
-python_change_Detection/octree.cpp.i:
-	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/python_change_Detection/octree.cpp.i
-.PHONY : python_change_Detection/octree.cpp.i
+src/octree_change_detection.cpp.i:
+	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/src/octree_change_detection.cpp.i
+.PHONY : src/octree_change_detection.cpp.i
 
-python_change_Detection/octree.s: python_change_Detection/octree.cpp.s
+src/octree_change_detection.s: src/octree_change_detection.cpp.s
 
-.PHONY : python_change_Detection/octree.s
+.PHONY : src/octree_change_detection.s
 
 # target to generate assembly for a file
-python_change_Detection/octree.cpp.s:
-	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/python_change_Detection/octree.cpp.s
-.PHONY : python_change_Detection/octree.cpp.s
+src/octree_change_detection.cpp.s:
+	$(MAKE) -f CMakeFiles/octree.dir/build.make CMakeFiles/octree.dir/src/octree_change_detection.cpp.s
+.PHONY : src/octree_change_detection.cpp.s
 
 # Help Target
 help:
@@ -266,15 +209,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... octree"
-	@echo "... change_detection/src/octree_change_detection.o"
-	@echo "... change_detection/src/octree_change_detection.i"
-	@echo "... change_detection/src/octree_change_detection.s"
-	@echo "... python_change_Detection/OctreeChangeDetection.o"
-	@echo "... python_change_Detection/OctreeChangeDetection.i"
-	@echo "... python_change_Detection/OctreeChangeDetection.s"
-	@echo "... python_change_Detection/octree.o"
-	@echo "... python_change_Detection/octree.i"
-	@echo "... python_change_Detection/octree.s"
+	@echo "... src/octree_change_detection.o"
+	@echo "... src/octree_change_detection.i"
+	@echo "... src/octree_change_detection.s"
 .PHONY : help
 
 

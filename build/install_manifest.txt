@@ -1,1 +1,4 @@
-/usr/local/lib/python3.8/octree.cpython-38-x86_64-linux-gnu.so
+/usr/local/lib/liboctree.so
+/usr/local/include/octree_change_detection
+/usr/local/include/include/octree_change_detection.h
+/usr/local/include/include/octree_change_detection
